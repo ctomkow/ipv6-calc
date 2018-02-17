@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>IPv6 Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    </head>
+    <body>
+        <div id="container">
+	    <div class="pagetitle">
+	         <h1>Calculate Ipv6 Address</h1>
+	    </div>
+	    <div id="main">
+	        <form method="post" action="{{ url_for('calc_result') }}">
+		    <label for="ip_address">IPv6 Address:</label>
+		    <input type="text" name="ip_address"><br />
+		    <label for="subnet_mask">IPv6 Mask (cidr):</label>
+		    <input type="text" name="subnet_mask"><br />
+		    <input type="submit">
+		</form>
+	    </div>
+	</div>
+    </body>
+</html>
