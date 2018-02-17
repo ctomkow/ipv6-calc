@@ -17,7 +17,7 @@ def calc():
 def result():
     ip_address = request.form['ip_address']
    
-    #ipv6 address
+    # ipv6 address
     ipv6_net = ipaddress.IPv6Interface(ip_address)
 
     return render_template(
